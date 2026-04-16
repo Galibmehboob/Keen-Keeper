@@ -26,7 +26,7 @@ const NavBar = () => {
         },
     ];
     return (
-        <nav className="w-full sticky top-1 z-10 mb-20 bg-zinc-100 text-white px-6 py-4 flex items-center justify-between shadow-md">
+        <nav className="w-full sticky top-0 z-10 mb-20 bg-zinc-100 text-white px-6 py-4 flex items-center justify-between shadow-md">
 
 
             <h1 className="text-2xl text-black  tracking-wide">

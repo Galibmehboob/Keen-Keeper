@@ -33,7 +33,7 @@ export default async function DetailsPage({ params }) {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-8 w-full max-w-5xl mx-auto">
 
-            {/* LEFT SIDE */}
+
             <div>
                 <div className="bg-white border border-zinc-200 shadow-md rounded-xl p-4 sm:p-6 text-center">
 
@@ -51,8 +51,8 @@ export default async function DetailsPage({ params }) {
 
                     <p
                         className={`mt-2 font-semibold text-sm w-fit mx-auto p-1 rounded-lg ${friend.status === "overdue"
-                                ? "bg-red-500 text-white"
-                                : ""
+                            ? "bg-red-500 text-white"
+                            : ""
                             } ${friend.status === "almost due"
                                 ? "bg-yellow-500 text-white"
                                 : ""
@@ -97,7 +97,7 @@ export default async function DetailsPage({ params }) {
                 </div>
             </div>
 
-            {/* RIGHT SIDE */}
+
             <div className="lg:col-span-2 flex flex-col gap-6">
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

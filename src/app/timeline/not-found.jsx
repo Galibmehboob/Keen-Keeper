@@ -11,7 +11,7 @@ export default function NotFound() {
 
 
             <p className="text-lg text-gray-600 mt-3 max-w-md">
-                Oops! The page you’re looking for doesn’t exist or has been moved.
+                Oops! The page you,re looking for doesn,t exist or has been moved.
             </p>
 
 

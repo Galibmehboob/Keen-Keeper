@@ -1,7 +1,26 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { ClipLoader } from "react-spinners";
+
 export default function Loading() {
-    return (
-        <div className="h-screen flex items-center justify-center">
-            <div className=" rounded-full h-16 w-16 border-t-4 border-green-500">Loading..... </div>
-        </div>
-    );
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShow(true);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (!show) {
+        return (
+            <div className="h-screen flex justify-center items-center">
+                <ClipLoader size={50} />
+            </div>
+        );
+    }
+
+    return null;
 }

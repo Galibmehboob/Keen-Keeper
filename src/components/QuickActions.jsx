@@ -22,16 +22,16 @@ export default function QuickActions({ friend }) {
 
     return (
         <div className="p-4 flex gap-4">
-            <button onClick={() => handleClick("call")} className="btn">
+            <button onClick={() => handleClick("call")} className="btn w-44 h-20 flex flex-col">
                 <IoCallOutline size={30} /> Call
             </button>
 
-            <button onClick={() => handleClick("text")} className="btn">
+            <button onClick={() => handleClick("text")} className="btn w-44 h-20 flex flex-col">
                 <MdOutlineTextsms size={30} /> Text
             </button>
 
-            <button onClick={() => handleClick("video")} className="btn">
-                <IoVideocamOutline size={30} /> Video
+            <button onClick={() => handleClick("video")} className="btn w-44 h-20 flex flex-col">
+                <IoVideocamOutline size={30} />  Video
             </button>
         </div>
     );

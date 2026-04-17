@@ -26,7 +26,7 @@ export default function StatsPage() {
 
     if (timeline.length === 0) {
         return (
-            <div className="p-4 sm:p-8 flex justify-center items-center">
+            <div className="p-4 sm:p-8 flex justify-center items-center ">
                 <div className="bg-white shadow-md border border-gray-200 rounded-xl p-6 text-center max-w-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800">
                         No Data
@@ -54,11 +54,11 @@ export default function StatsPage() {
                 <PieChart
                     width={300}
                     height={300}
-                    className="sm:w-[400px] sm:h-[400px]"
+                    className="sm:w-[400px] sm:h-[400px] mb-5"
                 >
                     <Pie
                         data={data}
-                        innerRadius="60%"
+                        innerRadius="70%"
                         outerRadius="100%"
                         cornerRadius={20}
                         paddingAngle={5}
@@ -66,6 +66,7 @@ export default function StatsPage() {
                     />
 
                     <Tooltip />
+
                     <Legend />
                 </PieChart>
             </div>

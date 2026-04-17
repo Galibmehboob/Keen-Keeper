@@ -26,11 +26,11 @@ const NavBar = () => {
         },
     ];
     return (
-        <nav className="w-full sticky top-0 z-10 mb-20 bg-zinc-100 text-white px-6 py-4 flex items-center justify-between shadow-md">
+        <nav className="w-full sticky top-0 z-10 mb-5 bg-zinc-100 text-white px-6 py-4 flex items-center justify-between shadow-md">
 
 
             <h1 className="text-2xl text-black  tracking-wide">
-                <span className='font-bold'>Keen</span> Keeper
+                <span className='font-bold'>Keen</span> <span className='text-[#2d5a48]'>Keeper</span>
             </h1>
 
 

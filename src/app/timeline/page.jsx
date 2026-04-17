@@ -39,7 +39,7 @@ export default function TimelinePage() {
             {filtered.map((item) => (
                 <div
                     key={item.id}
-                    className="shadow  border-gray-200 hover:shadow-lg hover:scale-[1.01] transition p-4 rounded mb-2 flex flex-col sm:flex-row gap-2"
+                    className="shadow  border-gray-200 hover:shadow-lg hover:scale-[1.01] transition p-4 rounded mb-2 flex  sm:flex-row gap-2"
                 >
                     <div className="flex items-center">
                         {getIcon(item.type)}

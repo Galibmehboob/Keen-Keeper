@@ -11,7 +11,6 @@ const getIcon = (type) => {
     if (type === "video") return <IoVideocamOutline size={38} />;
 };
 
-
 export default function TimelinePage() {
     const { timeline } = useTimeline();
     const [filter, setFilter] = useState("all");
@@ -21,15 +20,14 @@ export default function TimelinePage() {
     );
 
     return (
-        <div className="p-2 w-6xl mx-auto">
-            <h1 className="text-5xl font-bold mb-4">Timeline</h1>
+        <div className="p-2 w-70  sm:w-6xl  mx-auto">
+            <h1 className="text-3xl sm:text-5xl font-bold mb-4">Timeline</h1>
 
-
-            <div className="mb-4 ">
+            <div className="mb-4">
                 <select
                     value={filter}
                     onChange={(e) => setFilter(e.target.value)}
-                    className=" border p-2 rounded w-40"
+                    className="border p-2 rounded w-full sm:w-40"
                 >
                     <option value="all">All</option>
                     <option value="call">Call</option>
@@ -38,21 +36,24 @@ export default function TimelinePage() {
                 </select>
             </div>
 
-
             {filtered.map((item) => (
-                <div key={item.id} className="shadow border-gray-200 hover:translate-1 hover:shadow-lg p-4 rounded mb-2 flex gap-2">
-
-                    <div className="flex item-center">
+                <div
+                    key={item.id}
+                    className="shadow  border-gray-200 hover:shadow-lg hover:scale-[1.01] transition p-4 rounded mb-2 flex flex-col sm:flex-row gap-2"
+                >
+                    <div className="flex items-center">
                         {getIcon(item.type)}
                     </div>
+
                     <div className="flex flex-col">
-                        <p className="flex gap-2" > <span className="font-bold" >{item.type}</span> with {item.name}</p>
+                        <p className="flex gap-2 text-sm sm:text-base">
+                            <span className="font-bold">{item.type}</span> with {item.name}
+                        </p>
 
                         <span className="text-sm text-gray-500">
                             {item.date}
                         </span>
                     </div>
-
                 </div>
             ))}
         </div>

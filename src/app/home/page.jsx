@@ -1,7 +1,7 @@
 import FriendList from "@/components/homepage/FriendList";
 
 const getData = async () => {
-    const res = await fetch("http://localhost:3000/data.json", {
+    const res = await fetch("https://keen-keeper-coral.vercel.app//data.json", {
         cache: "no-store",
     });
     return res.json();

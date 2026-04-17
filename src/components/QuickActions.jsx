@@ -21,17 +21,29 @@ export default function QuickActions({ friend }) {
     };
 
     return (
-        <div className="p-4 flex gap-4">
-            <button onClick={() => handleClick("call")} className="btn w-44 h-20 flex flex-col">
-                <IoCallOutline size={30} /> Call
+        <div className="p-4 grid grid-cols-3 gap-3">
+            <button
+                onClick={() => handleClick("call")}
+                className="btn w-full h-20 flex flex-col items-center justify-center"
+            >
+                <IoCallOutline size={30} />
+                <span className="hidden sm:block">Call</span>
             </button>
 
-            <button onClick={() => handleClick("text")} className="btn w-44 h-20 flex flex-col">
-                <MdOutlineTextsms size={30} /> Text
+            <button
+                onClick={() => handleClick("text")}
+                className="btn w-full h-20 flex flex-col items-center justify-center"
+            >
+                <MdOutlineTextsms size={30} />
+                <span className="hidden sm:block">Text</span>
             </button>
 
-            <button onClick={() => handleClick("video")} className="btn w-44 h-20 flex flex-col">
-                <IoVideocamOutline size={30} />  Video
+            <button
+                onClick={() => handleClick("video")}
+                className="btn w-full h-20 flex flex-col items-center justify-center"
+            >
+                <IoVideocamOutline size={30} />
+                <span className="hidden sm:block">Video</span>
             </button>
         </div>
     );

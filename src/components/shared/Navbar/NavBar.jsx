@@ -37,7 +37,7 @@ const NavBar = () => {
             <div className="flex gap-2">
                 {navItems.map((item, index) => (
                     <MyLink key={index} href={item.path} icon={item.icon}>
-                        {item.text}
+                        <span className="hidden sm:inline">{item.text}</span>
                     </MyLink>
                 ))}
             </div>

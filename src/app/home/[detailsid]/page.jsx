@@ -14,7 +14,10 @@ export const metadata = {
 
 // Fetch Data
 const friendsPromise = async () => {
-    const res = await fetch("http://localhost:3000/data.json")
+    const res = await fetch("https://keen-keeper-coral.vercel.app/data.json", {
+
+        cache: 'no-store'
+    })
     const data = await res.json();
 
 

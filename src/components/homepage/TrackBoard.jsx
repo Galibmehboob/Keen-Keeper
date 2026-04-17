@@ -7,7 +7,7 @@ export default function TrackBoard() {
     ];
 
     return (
-        <div className="flex gap-6 justify-center flex-wrap mt-10">
+        <div className="flex gap-6 justify-center flex-wrap mt-10 border-gray-200 pb-5 border-b-2">
             {cards.map((item, index) => (
                 <div
                     key={index}
